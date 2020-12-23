@@ -5,6 +5,10 @@ from django.contrib.admin.options import ModelAdmin
 
 from .models import Question,Choice
 
+admin.site.site_header = "Pollster Admin"
+admin.site.site_title = "Pollster Admin Area"
+admin.site.index_title = "Welcome to the Pollster admin area"
+
 class ChoiceInline(admin.TabularInline):
     model = Choice
     extra = 3
